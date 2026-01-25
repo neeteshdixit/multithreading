@@ -1,4 +1,4 @@
-package lock;
+package synchronization;
 
 public class Main {
 

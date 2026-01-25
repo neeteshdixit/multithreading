@@ -1,9 +1,9 @@
-package lock;
+package synchronization;
 
 public class BankAccount {
     private int balance = 100;
 
-    public void withdraw(int amount) {
+    public synchronized void withdraw(int amount) {
         System.out.println(Thread.currentThread().getName() + " your balance is " + balance);
 
         if (amount <= balance) {

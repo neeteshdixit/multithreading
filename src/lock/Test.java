@@ -4,12 +4,15 @@ public class Test {
 
     public static void main(String[] args) {
 //        BankSystem ba = new BankSystem();
-        UnFairLock uf = new UnFairLock();
+//        UnFairLock uf = new UnFairLock();
+        FairnessLock fl = new FairnessLock();
         Runnable task = new Runnable() {
             @Override
             public void run() {
 //                ba.withdraw(50);
-                uf.accessResource();
+//                uf.accessResource();
+                fl.accessResource();
+
             }
         };
         Thread t1 = new Thread(task,"thread 1");
